@@ -68,6 +68,7 @@
     
 ---
 - 8、关于安卓沉浸式渲染的问题,设置系统栏和app颜色一致的
+
 >Demo见GitHub---[SystemBarTint][3]
 
     - 那个systembar tintmanager设置系统栏和app颜色一致的,我那个布局文件每个都要进行设置,这样很麻烦。。
@@ -96,14 +97,17 @@
 
 ---
 - 11、app初次安装时，会在cache目录里生成大量dex文件，在Android 6.0的机型上会复现
+
 >解决方法[.dex file in android][4]
     
 ---
 - 12、把这两个menu item显示在toolbar 
+
 >参考 [How to add buttons like refresh and search in ToolBar in Android?][5]
 
 ---
 - 13、将一个bitmap如何实现马赛克效果
+
 >参考[Android群英传笔记——第六章：Android绘图机制与处理技巧][6]
 
 ---
@@ -193,7 +197,6 @@ mShaderPaint.setShader(new LinearGradient(0, 0, 0, getHeight(), 0xff000000, 0x00
 - 29、像微信那样滑动关闭Activity
     - http://gold.xitu.io/entry/5715f2111ea4930059d34d71
 
-- 30、
         
   [1]: http://blog.csdn.net/nupt123456789/article/details/34415849
   [2]: http://blog.csdn.net/lfdfhl/article/details/38070991
