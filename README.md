@@ -194,10 +194,62 @@
 mShaderPaint.setShader(new LinearGradient(0, 0, 0, getHeight(), 0xff000000, 0x00000000, Shader.TileMode.CLAMP));
 ```
 
+---
 - 29、像微信那样滑动关闭Activity
     - http://gold.xitu.io/entry/5715f2111ea4930059d34d71
 
+---
+- 30、请问对Retrofit该怎么封装比较好？
+    - http://gank.io/post/56e80c2c677659311bed9841
+
+---
+- 31、rxandroid代码中怎么没有AndroidObservable这个类了呀？？
+    -  删除了，原来是分离出来了，非常感谢！
+    -  http://www.cnblogs.com/liulipeng/p/5046623.html
+
+---
+- 32、请问谁有照片墙的demo，点击放大图片左右滑动切换的那种？
+    -  https://github.com/debolee/demo6_PhotoRiver
+    -  这个效果好6，这部ios吗，好熟悉的UIViewControl
+
+---          
+- 33、请教下旋转动画会出现锯齿应该咋解决啊
+    -  设置反锯齿
+
+- 34、谁有那种点击一个图片 显示为动画不断变小 然后加入购物车的demo吗
+    -  做属性动画就行了
+
+- 35、类变量和实例变量的区别是什么
+    - 就是 有static和 没static的区别
+
+---
+- 36、对了大家 做过分屏程序吗，我们在聊天的功能 访qq 的那种 左侧是 聊天列表，右侧是聊天页面，那么我在 右侧 输入框 谈起键盘的时候 怎么不让左侧的fragment 也弹起来呢
+    - 可以看看telegram怎么处理的
+
+---
+- 37、这种布局应该如何实现![此处输入图片的描述][14]
+    - 卧槽了,又是这种布局.坑的要死.需要用那个CoordinatorLayout,和Behavior.本人愚钝,研究了好久没搞好
+    - 网上说的是用一个listview，上面是header，下面一个listview切换数据，记录滚动的位置
+    - 左右不可滑动，你看新浪微博都不可以，外面如果用scrollview，listview无法监听页面滑动到底部，都不能重用，势必消耗性能
+
+---
+- 38、右上角那个播放的要怎么办啊？![http://img.blog.csdn.net/20160531160918150][15]
+    - 那个播放的放toolbar上面啊，写一个BasePlayActivity，toolbar右上角布局一个imageview，在onresume和onpause里面控制
+
+---
+- 39、我有这样一个请求，如果首次请求结果过滤后没有自己想要的结果就重复请求原地址，重复请求结果如果有问题就按异常去处理，如果首次请求正常就直接处理，这种怎么写
+    - http://blog.danlew.net/2016/01/25/rxjavas-repeatwhen-and-retrywhen-explained/
+
+---
+- 40、求教一下大神们，使用dagger 怎么划分粒度
+    - http://blog.zhaiyifan.cn/2016/03/27/android-new-project-from-0-p4/
+    - 另外 android-architecture 的 dagger 分支你也可以参考下
+
+---
+
         
+
+
   [1]: http://blog.csdn.net/nupt123456789/article/details/34415849
   [2]: http://blog.csdn.net/lfdfhl/article/details/38070991
   [3]: https://github.com/Ztiany/SystemBarTint
@@ -211,3 +263,5 @@ mShaderPaint.setShader(new LinearGradient(0, 0, 0, getHeight(), 0xff000000, 0x00
   [11]: http://blog.csdn.net/mr_wanggang/article/details/42343501
   [12]: http://www.jianshu.com/p/ec5a1a30694b?utm_campaign=haruki&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=weixin&amp;from=groupmessage&amp;isappinstalled=0
   [13]: https://yq.aliyun.com/articles/10124
+  [14]: http://img.blog.csdn.net/20160531161638268
+  [15]: http://img.blog.csdn.net/20160531160918150
