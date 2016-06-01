@@ -246,7 +246,24 @@ mShaderPaint.setShader(new LinearGradient(0, 0, 0, getHeight(), 0xff000000, 0x00
     - 另外 android-architecture 的 dagger 分支你也可以参考下
 
 ---
+- 41、如果服务端的数据是不定期刷新的话 获取数据改怎么控制是获取缓存 还是网络获取
+    - 跟服务器约定请求头状态码304，来判断是否更新
+    - 自从上次请求后，请求的网页未修改过。服务器返回此响应时，不会返回网页内容。
 
+---
+- 42、你们的接口兼容都是怎么处理的？就是3.0版本的接口兼容2.0的版本，都是怎么处理的？
+    - 主要还是后台的工作吧，我之前/v2 /v3这样。
+    - 后台自己会兼容呀.根据你传过去的版本号给你返回不同的东西.
+
+---
+- 43、Retrofit 2.0使用详解，配合OkHttp、Gson，Android最强网络请求框架
+    - http://blog.csdn.net/u012301841/article/details/49685677
+
+---
+- 44、微信抢红包神器的实现原理
+    - http://www.zhihu.com/question/28152693/answer/41597763
+    - http://www.wtoutiao.com/p/13fxYQX.html
+            
         
 
 
